@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Social Media Marketing Professional Certificate | Coursera</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .breadcrumb {
+            padding: 0.25rem 0;
+            border-bottom: 1px solid #e5e7eb;
+            min-height: 32px;
+            display: flex;
+            align-items: center;
+        }
+        .breadcrumb-item {
+            display: inline-flex;
+            align-items: center;
+            font-size: 0.75rem;
+            color: #4b5563;
+            line-height: 1;
+        }
+        .breadcrumb-item a {
+            color: #1f2937;
+            text-decoration: none;
+            padding: 0 0.25rem;
+        }
+        .breadcrumb-item a:hover {
+            color: #2563eb;
+            text-decoration: underline;
+        }
+        .breadcrumb-item a.active {
+            color: #2563eb;
+            font-weight: 600;
+            pointer-events: none;
+        }
+        .breadcrumb-separator {
+            margin: 0 0.25rem;
+            color: #9ca3af;
+            font-size: 0.75rem;
+        }
+        .home-icon {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+            fill: currentColor;
+        }
+        .time-info {
+            font-size: 0.75rem;
+            color: #6b7280;
+            padding-top: 0.25rem;
+        }
+        .hero-section {
+            padding: 2rem 0;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .hero-section img.logo {
+            max-width: 160px;
+            margin-bottom: 1rem;
+        }
+        .hero-section h1 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .hero-section p {
+            font-size: 0.875rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+        .hero-section .instructors {
+            margin-bottom: 1rem;
+        }
+        .hero-section .instructors img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+        }
+        .hero-section .enroll-btn {
+            background-color: #1b74e4;
+            color: #fff;
+            padding: 0.75rem 2rem;
+            border-radius: 4px;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .hero-section .stats {
+            font-size: 0.75rem;
+            margin-top: 1rem;
+        }
+        .hero-section .coursera-plus {
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+        }
+        .course-details {
+            padding: 2rem 0;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 1.5rem;
+        }
+        .course-details .section {
+            margin-bottom: 1.5rem;
+        }
+        .course-details h5 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .learn-list li {
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        .learn-list li::before {
+            content: "✔";
+            color: #007bff;
+            margin-right: 0.5rem;
+            margin-top: 0.2rem;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .skills-list a {
+            color: #007bff;
+            padding: 0.25rem 0.75rem;
+            border: 1px solid #007bff;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            text-decoration: none;
+        }
+        .skills-list a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .details-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .details-item img {
+            width: 24px;
+            height: 24px;
+            margin-right: 1rem;
+        }
+        .details-item .content div:first-child {
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+        .footer-image {
+            width: 100%;
+            height: 150px;
+            background: url('https://via.placeholder.com/1200x150?text=Certificate+Background') no-repeat center;
+            background-size: cover;
+            margin-top: -1.5rem;
+            position: relative;
+            z-index: -1;
+        }
+        .faq-section {
+            padding: 2rem 0;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 1.5rem;
+        }
+        .faq-section h5 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .faq-section p {
+            font-size: 0.875rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Breadcrumb Section -->
+    <section class="bg-gray-50 font-sans">
+        <div class="container mx-auto p-4">
+            <nav aria-label="Đường dẫn" class="breadcrumb">
+                <ol class="flex items-center">
+                    <li class="breadcrumb-item">
+                        <a href="/" aria-label="Trang chủ" data-testid="home-link">
+                            <svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px;">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/>
+                                <polyline points="9 22 9 12 15 12 15 22"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <span class="breadcrumb-separator">&gt;</span>
+                        <a href="/browse">Duyệt</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <span class="breadcrumb-separator">&gt;</span>
+                        <a href="/browse/business">Business</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <span class="breadcrumb-separator">&gt;</span>
+                        <a href="/browse/business/marketing" class="active" aria-current="page">Marketing</a>
+                    </li>
+                </ol>
+            </nav>
+            <div class="time-info">
+                Current Time: 03:49 PM +07, Friday, August 01, 2025
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero-section container mx-auto p-4 mt-6">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="w-full sm:w-1/2">
+                <img src="https://via.placeholder.com/160?text=Meta+Logo" alt="Meta Logo" class="logo mb-4">
+                <h1>Meta Social Media Marketing Professional Certificate</h1>
+                <p>
+                    Launch your career as a Social Media Marketer. Build job-ready skills – and must-have AI skills – for an in-demand career. Earn a credential from Meta in 5 months or less. No degree or prior experience required.
+                </p>
+                <div class="instructors flex items-center mb-4">
+                    <img src="https://via.placeholder.com/40?text=Anke" alt="Anke Audenaert" class="mr-2">
+                    <img src="https://via.placeholder.com/40?text=Daniel" alt="Daniel Kob" class="mr-2">
+                    <p>Instructors: <a href="#" class="text-blue-600">Anke Audenaert</a>, <a href="#" class="text-blue-600">Daniel Kob</a></p>
+                </div>
+                <form action="/professional-certificates/facebook-social-media-marketing" method="GET" class="mb-4">
+                    <input type="hidden" name="action" value="enroll">
+                    <button type="submit" class="enroll-btn">
+                        <span class="font-bold">Enroll for Free</span>
+                    </button>
+                </form>
+                <p class="stats">504,278 already enrolled</p>
+                <div class="coursera-plus flex items-center">
+                    <p>Included with <img src="https://via.placeholder.com/20?text=Coursera+Plus" alt="Coursera Plus" class="h-3 ml-1 mr-1"></p>
+                    <a href="/courseraplus" class="text-black underline ml-1">Learn more</a>
+                </div>
+            </div>
+            <div class="hidden sm:block w-1/2">
+                <img src="https://via.placeholder.com/300?text=Coursera+Learners" alt="Coursera Learners" class="w-full h-auto max-w-[300px] max-h-[200px] mx-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Details Section -->
+    <section class="course-details container mx-auto p-4">
+        <div class="section mb-6">
+            <h5>What you'll learn</h5>
+            <ul class="learn-list">
+                <li>Understand the landscape of traditional, digital, and social media marketing</li>
+                <li>Understand the major social media platforms, how they function, and what role they play in marketing</li>
+                <li>Create SMART goals, identify KPIs, and define your target audience and their customer journey</li>
+                <li>Choose the right social media platforms and learn how to create social media policies</li>
+            </ul>
+        </div>
+        <div class="section mb-6">
+            <h5>Skills you'll gain</h5>
+            <ul class="skills-list">
+                <li><a href="#">Social Media Marketing</a></li>
+                <li><a href="#">Digital Marketing</a></li>
+                <li><a href="#">Target Audience</a></li>
+                <li><a href="#">Goal Setting</a></li>
+                <li><a href="#">Key Performance Indicators (KPIs)</a></li>
+            </ul>
+            <a href="#" class="text-gray-500 text-sm">View all skills</a>
+        </div>
+        <div class="section">
+            <h5>Details to know</h5>
+            <div class="details-item">
+                <img src="https://via.placeholder.com/24" alt="Shareable Certificate">
+                <div class="content">
+                    <div>Shareable certificate</div>
+                    <a href="#">Add to your LinkedIn profile</a>
+                </div>
+            </div>
+            <div class="details-item">
+                <img src="https://via.placeholder.com/24" alt="Industry Certification">
+                <div class="content">
+                    <div>Industry certification</div>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+            <div class="details-item">
+                <img src="https://via.placeholder.com/24" alt="Language">
+                <div class="content">
+                    <div>Taught in English</div>
+                    <div class="text-gray-500">23 languages available, including Vietnamese (auto-translated)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section class="course-details container mx-auto p-4 mt-6">
+        <div class="section">
+            <h5>Instructors</h5>
+            <div class="flex items-center mb-2">
+                <img src="https://via.placeholder.com/40?text=Anke" alt="Anke Audenaert" class="mr-2">
+                <div>
+                    <p class="font-semibold">Anke Audenaert</p>
+                    <p class="text-gray-500">Meta | 41 Courses | 903,591 learners</p>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <img src="https://via.placeholder.com/40?text=Daniel" alt="Daniel Kob" class="mr-2">
+                <div>
+                    <p class="font-semibold">Daniel Kob</p>
+                    <p class="text-gray-500">Meta | 12 Courses | 188,372 learners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section container mx-auto p-4">
+        <h5>Frequently Asked Questions</h5>
+        <p>
+            Aptly is an online education provider that specializes in technology and the tech industry, powered by a team of educators, digital marketers, and instructional designers. Through their hands-on, applied education programs, they’ve helped hundreds of thousands of students, employees, and marketers gain the skills and knowledge to succeed in the digital economy. Meta and Aptly partnered to produce the series of courses in the Meta Social Media Marketing Professional Certificate.
+        </p>
+        <p>
+            This Professional Certificate program is designed for beginners, no prior knowledge or experience required. Each course builds upon the previous one to reinforce fundamental social media marketing skills, including social media management and advertising. Upon completing this certificate, you may qualify for entry-level jobs such as social media manager, social media coordinator, social media specialist and paid media coordinator.
+        </p>
+        <p>
+            A Meta Certification is an industry credential that signifies proficiency on Meta technologies such as Facebook, Instagram, Messenger, and WhatsApp. Meta offers several certifications across digital marketing, marketing analytics and software engineering. As part of the Meta Social Media Marketing Professional Certificate, you’ll take an online proctored exam for the Meta Digital Marketing Associate Certification to become a Meta Certified Professional. This exam is currently available in English, Portuguese and Spanish.
+        </p>
+    </section>
+
+    <!-- Footer Image -->
+    <div class="footer-image"></div>
+</body>
+</html>
